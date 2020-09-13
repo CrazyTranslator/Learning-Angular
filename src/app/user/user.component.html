@@ -1,0 +1,4 @@
+<input [(ngModel)]="userName" class="form-control">
+<button (click)="DisplayUserName()" [disabled]="!userName" class="btn btn-primary">Update user</button>
+<button (click)="ResetUserName()" [disabled]="!userNameResult" class="btn btn-primary">Reset user</button>
+<p>{{ userNameResult }}</p>
